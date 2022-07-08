@@ -1,0 +1,13 @@
+section {
+    text-align: center;
+}
+
+.coordonnees div,
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.coordonnees div img {
+    width: 13%;
+}

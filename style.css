@@ -44,3 +44,11 @@ h3 {
 li:nth-child(odd) {
     background-color: aquamarine;
 }
+
+.styleTab {
+    border-collapse: collapse;
+}
+
+.parcours {
+    overflow-x: scroll;
+}

@@ -55,6 +55,7 @@ li:nth-child(odd) {
     overflow-x: scroll;
 }
 
-.styleFormation tr td {
-    padding: 10px 20px 10px 0;
+.styleTab tr td {
+    padding: 10px 20px 10px 5px;
+    border: 1px solid black;
 }

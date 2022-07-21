@@ -1,5 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: rgb(157, 225, 225);
+}
+
+header {
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
 }
 
 header,
@@ -23,13 +34,16 @@ p {
 }
 
 h1,
-h3 {
+h3,
+header div {
     text-align: center;
-    padding: 3%;
 }
 
-.sections .content {
-    padding: 2%;
+h1,
+h3,
+.sections .content,
+p {
+    padding: 3%;
 }
 
 .sections .content img {
@@ -59,3 +73,42 @@ li:nth-child(odd) {
     padding: 10px 20px 10px 5px;
     border: 1px solid black;
 }
+
+.styleTab tr td ul {
+    list-style: none;
+}
+
+
+/* @media screen {
+    body {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 1fr 0.25fr 1fr 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 0px;
+    }
+    header {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .profile {
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .coordonnees {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .competences {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    .parcours {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+    .formation {
+        grid-area: 4 / 2 / 5 / 3;
+    }
+    .interet {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+} */

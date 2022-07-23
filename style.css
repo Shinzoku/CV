@@ -78,8 +78,7 @@ li:nth-child(odd) {
     list-style: none;
 }
 
-
-/* @media screen {
+@media screen and (min-width: 900px) {
     body {
         display: grid;
         grid-template-columns: 0.5fr 1fr;
@@ -111,4 +110,4 @@ li:nth-child(odd) {
     .interet {
         grid-area: 4 / 1 / 5 / 2;
     }
-} */
+}

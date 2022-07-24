@@ -19,16 +19,19 @@ header,
     justify-content: space-around;
 }
 
-.sections,
-p {
+p,
+.sections {
     text-align: justify;
+}
+
+#addressText {
+    text-align: center;
 }
 
 .sections h3 {
     border-top: 2px solid black;
     background-color: rgb(26, 0, 173);
     color: aliceblue;
-    cursor: pointer;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -43,9 +46,10 @@ h1,
 h3,
 .sections .content,
 p {
-    padding: 3%;
+    padding: 20px;
 }
 
+.sections h3,
 .sections .content img {
     cursor: pointer;
 }
@@ -82,9 +86,12 @@ li:nth-child(odd) {
     body {
         display: grid;
         grid-template-columns: 0.5fr 1fr;
-        grid-template-rows: 1fr 0.25fr 1fr 1fr;
+        grid-template-rows: 0.25fr 0.25fr 1fr 0.75fr;
         grid-column-gap: 50px;
         grid-row-gap: 0px;
+    }
+    .sections h3 {
+        cursor: default;
     }
     header {
         grid-area: 1 / 1 / 2 / 2;

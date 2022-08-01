@@ -62,9 +62,6 @@ form button {
     cursor: pointer;
 }
 
-
-/* grid for skills */
-
 .skills {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

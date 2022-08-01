@@ -44,6 +44,7 @@ h1,
 h3,
 header div,
 form,
+header p,
 #addressText {
     text-align: center;
 }
@@ -61,22 +62,80 @@ form button {
     cursor: pointer;
 }
 
-.styleSkills {
-    line-height: 1.8rem;
-    padding-left: 10px;
+
+/* grid for skills */
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
 }
 
-ul {
-    list-style-type: none;
+.div1 {
+    grid-area: 1 / 1 / 3 / 3;
 }
 
-ul li {
-    padding: 5px;
+.div2 {
+    grid-area: 3 / 1 / 4 / 2;
 }
 
-li:nth-child(odd) {
-    background-color: #edc4b3;
-    color: white;
+.div3 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.div4 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.div5 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.div6 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.div7 {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.div8 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.div9 {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div9 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div1 {
+    height: 300px;
+}
+
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div9 {
+    height: 150px;
 }
 
 .styleTab {
@@ -84,9 +143,14 @@ li:nth-child(odd) {
     text-align: left;
 }
 
+.skills {
+    width: 750px;
+}
+
+.skills,
 .parcours,
 .formation {
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 .styleTab tr td {
@@ -94,10 +158,13 @@ li:nth-child(odd) {
     border: 1px solid black;
 }
 
+
+/* Desktop */
+
 @media screen and (min-width: 900px) {
     body {
         display: grid;
-        grid-template-columns: 0.5fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.25fr 0.25fr 1fr 0.75fr;
         grid-column-gap: 5px;
         grid-row-gap: 0px;

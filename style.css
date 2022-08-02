@@ -45,15 +45,30 @@ h3,
 header div,
 form,
 header p,
+header a,
 #addressText {
     text-align: center;
 }
 
 h1,
 h3,
-.sections .content,
-p {
+.profile p,
+.sections .content {
     padding: 20px;
+}
+
+header {
+    line-height: 2rem;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(143, 3, 3);
+}
+
+header a:hover {
+    font-weight: bold;
+    color: black;
 }
 
 .sections h3,
@@ -148,6 +163,7 @@ form button {
 .parcours,
 .formation {
     overflow-x: auto;
+    scrollbar-color: rgb(143, 3, 3) rgb(128, 128, 128);
 }
 
 .styleTab tr td {

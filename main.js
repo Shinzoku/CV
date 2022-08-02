@@ -22,11 +22,14 @@ if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elain
     }
 
     let address = document.querySelector('#address');
-
     address.addEventListener("click", () => {
-        let p = document.createElement('p');
-        document.querySelector('.coordonnees').appendChild(p);
-        p.id = "addressText";
-        document.querySelector('#addressText').innerHTML = "13 rue Boiëldieu 62800 Liévin";
+        if (document.querySelector('#addressText')) {
+            p.remove();
+        } else {
+            let p = document.createElement('p');
+            document.querySelector('.coordonnees').appendChild(p);
+            p.id = "addressText";
+            document.querySelector('#addressText').innerHTML = "13 rue Boiëldieu 62800 Liévin";
+        }
     })
 }

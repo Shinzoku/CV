@@ -121,6 +121,22 @@ form button {
     grid-area: 3 / 4 / 4 / 5;
 }
 
+.div10 {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.div11 {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.div12 {
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+.div13 {
+    grid-area: 4 / 4 / 5 / 5;
+}
+
 .div1,
 .div2,
 .div3,
@@ -129,7 +145,11 @@ form button {
 .div6,
 .div7,
 .div8,
-.div9 {
+.div9,
+.div10
+.div11
+.div12
+.div13 {
     display: flex;
     align-items: center;
     justify-content: center;
